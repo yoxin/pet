@@ -1,0 +1,19 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">桌面宠物</string>
+    <string name="action_settings">Settings</string>
+    <!--  BluetoothChat -->
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">蓝牙不可用！已退出蓝牙配对。</string>
+    <string name="title_connecting">正在配对中...</string>
+    <string name="title_connected_to">已经配对设备 <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">目前没有配对</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">&#160;&#160;正在搜索设备...</string>
+    <string name="select_device">&#160;&#160;请选择设备</string>
+    <string name="none_paired">&#160;没有已匹配设备</string>
+    <string name="none_found">&#160;找不到设备</string>
+    <string name="title_paired_devices">已配对的设备</string>
+    <string name="title_other_devices">可用设备</string>
+    <string name="button_scan">搜索设备</string>
+</resources>

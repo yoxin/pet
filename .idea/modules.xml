@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnyTime-master/AnyTime-master.iml" filepath="$PROJECT_DIR$/AnyTime-master/AnyTime-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DroidPlugin/project/Libraries/Libraries.iml" filepath="$PROJECT_DIR$/DroidPlugin/project/Libraries/Libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DroidPlugin/project/Libraries/DroidPlugin/Libraries-DroidPlugin.iml" filepath="$PROJECT_DIR$/DroidPlugin/project/Libraries/DroidPlugin/Libraries-DroidPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pet.iml" filepath="$PROJECT_DIR$/Pet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DroidPlugin/Pet-DroidPlugin.iml" filepath="$PROJECT_DIR$/DroidPlugin/Pet-DroidPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ext-plugin/ext-plugin.iml" filepath="$PROJECT_DIR$/ext-plugin/ext-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DroidPlugin/project/project.iml" filepath="$PROJECT_DIR$/DroidPlugin/project/project.iml" />
+    </modules>
+  </component>
+</project>

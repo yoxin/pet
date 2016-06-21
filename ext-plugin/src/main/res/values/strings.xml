@@ -1,0 +1,4 @@
+<resources>
+    <string name="plugin_name">插件系统</string>
+    <string name="main_goto_plugin">跳转插件</string>
+</resources>

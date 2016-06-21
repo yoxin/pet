@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/pika"
+        android:id="@+id/select_img" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/select_img"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="17sp"
+        android:id="@+id/select_name" />
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/edit"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/select_img"
+        android:layout_marginStart="10dp"
+        android:id="@+id/select_edit" />
+
+    <Switch
+        android:id="@+id/select_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:checked="false"
+        android:layout_below="@+id/select_img"
+        android:layout_alignEnd="@+id/select_img"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>
+

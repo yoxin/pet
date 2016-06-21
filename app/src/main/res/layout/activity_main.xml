@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical" >
+   <android.support.v4.view.ViewPager
+       android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+       android:id="@+id/mPager"
+       android:layout_weight="1"
+       android:flipInterval="30"
+       android:persistentDrawingCache="animation"/>
+      
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="60dp"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:id="@+id/first_fragment"
+           android:layout_weight="1">
+           <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_centerHorizontal="true"
+               android:orientation="vertical">
+               <ImageView
+                   android:id="@+id/image1"
+                   android:layout_marginTop="15dp"
+                   android:layout_width="35dp"
+                   android:layout_height="25dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/home" />
+               <TextView
+                   android:id="@+id/text1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="宠物"
+                   android:layout_gravity="center_horizontal"
+                   android:textColor="#7597B3" />
+           </LinearLayout>
+       </RelativeLayout>
+              <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:id="@+id/second_fragment"
+           android:layout_weight="1">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_centerHorizontal="true"
+               android:orientation="vertical" >
+               <ImageView
+                   android:id="@+id/image2"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/clock" />
+               <TextView
+                   android:id="@+id/text2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="提醒"
+                   android:textColor="#7597B3" />
+           </LinearLayout>
+       </RelativeLayout>
+                 <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:id="@+id/third_fragment"
+           android:layout_weight="1">
+           <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_centerHorizontal="true"
+               android:orientation="vertical">
+               <ImageView
+                   android:id="@+id/image3"
+                   android:layout_marginTop="15dp"
+                   android:layout_width="35dp"
+                   android:layout_height="25dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/setting" />
+               <TextView
+                   android:id="@+id/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="设置"
+                   android:textColor="#7597B3" />
+           </LinearLayout>
+       </RelativeLayout>
+   </LinearLayout>
+ </LinearLayout>

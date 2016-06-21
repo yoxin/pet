@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sweetblue"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+    >
+        <Button 
+            android:id="@+id/alarmset_bt_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+        />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="47dp"
+            />
+
+    </RelativeLayout>
+  <!-- <View 
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/white"/>
+   -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基本属性"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事项"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginLeft="47sp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/alarmset_et_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_marginLeft="47sp"
+            android:layout_marginTop="3dp"
+            android:background="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="47sp"
+            android:layout_marginRight="47sp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginLeft="47sp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/alarmset_et_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="47sp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_marginTop="3dp"
+            android:background="@null"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="47sp"
+            android:layout_marginRight="47sp"
+            android:background="@color/white"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="闹钟"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="8dp"/>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:background="@drawable/border"
+            android:elevation="3dp"
+            >
+            <TextView
+                android:id="@+id/alarm_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="日期"
+                android:textSize="20sp"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/alarm_et_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/alarm_tv_date"
+                android:layout_alignBottom="@+id/alarm_tv_date"
+                android:textSize="20sp"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColor="@color/grey"
+                />
+            <Button
+                android:id="@+id/alarm_bt_date"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignBottom="@+id/alarm_tv_date"
+                android:background="@drawable/edit_birthday"
+                android:layout_above="@+id/set_tv_character"
+                android:layout_alignEnd="@+id/alarm_et_date" />
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#c0c0c0"
+                />
+
+            <TextView
+                android:id="@+id/alarm_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alarm_tv_date"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="时间"
+                android:textSize="20sp"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/alarm_et_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/alarm_tv_time"
+                android:layout_alignBottom="@+id/alarm_tv_time"
+                android:textSize="20sp"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColor="@color/grey"
+                />
+            <Button
+                android:id="@+id/alarm_bt_time"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignBottom="@+id/alarm_tv_time"
+                android:background="@drawable/time"
+                android:layout_above="@+id/set_tv_character"
+                android:layout_alignEnd="@+id/alarm_et_time" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/alarmset_bt_save"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:background="#069DD9"
+            android:textColor="@color/white"
+            android:text="保存"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

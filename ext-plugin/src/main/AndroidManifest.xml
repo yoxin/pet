@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="yoxin.com.ext_plugin">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        >
+        <activity android:name=".PluginActivity">
+            <intent-filter>
+                <action android:name="me.chunyu.clwang.master.action_main"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
